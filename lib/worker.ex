@@ -99,7 +99,7 @@ defmodule Metex.Worker do
   def update_stats(old_stats, location) do
     case Map.has_key?(old_stats, location) do
       true ->
-        Map.update(old_stats, location, &(&1+1))
+        Map.update!(old_stats, location, &(&1+1))
       false ->
         Map.put(old_stats, location, 1)
     end
