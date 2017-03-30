@@ -1,6 +1,6 @@
-# Exercises from The Little Elixir & OTP Guidebook 
+# Exercises from The Little Elixir & OTP Guidebook
 
-### Includes 
+### Includes
 1. Metex (GenServer)
 2. Ping Pong
 3. Term Store
@@ -19,13 +19,13 @@ alias Metex.Worker
 Worker.get_temperature("London")
 ```
 
-### Ping Pong
+#### Ping Pong
 
 ```
 Metex.ping_pong()
 ```
 
-### Term Store
+#### Term Store
 
 ```
 alias Metex.Store
@@ -36,4 +36,3 @@ Store.exist?(:key)
 Store.delete(:key)
 Store.clear
 ```
-
